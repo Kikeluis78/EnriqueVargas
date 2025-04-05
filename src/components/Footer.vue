@@ -15,7 +15,8 @@
                             <h5 class="text-uppercase">Links</h5>
                             <ul class="list-unstyled mb-0">
                                 <!-- Usando router-link en lugar de <a> -->
-                                <li><router-link to="/link1" class="text-white">Terminos y Condiciones</router-link></li>
+                                <li><router-link to="/link1" class="text-white">Terminos y Condiciones</router-link>
+                                </li>
                                 <li><router-link to="/link2" class="text-white">Politica de Calidad</router-link></li>
                                 <li><router-link to="/link3" class="text-white">Cursos</router-link></li>
                                 <li><router-link to="/link4" class="text-white">Blog</router-link></li>
@@ -45,7 +46,7 @@
                             </ul>
                         </div>
                     </div>
-                  
+
                 </section>
 
                 <hr class="mb-2" />
@@ -62,23 +63,28 @@
                 <hr class="mb-4" />
 
                 <section class="mb-1 text-center ">
-                    <router-link to="/facebook" class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
+                    <router-link to="https://www.facebook.com/share/168GbGt5Ri/"
+                        class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
                         <i class="bi bi-facebook"></i>
                     </router-link>
 
-                    <router-link to="/tiktok" class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
+                    <router-link to="https://vm.tiktok.com/ZMB9UdUPj/"
+                        class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
                         <i class="bi bi-tiktok"></i>
                     </router-link>
 
-                    <router-link to="/instagram" class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
+                    <router-link to="https://www.instagram.com/enrique_vargas78/profilecard/?igsh=MWRkZXp2c3A1cHN0OQ=="
+                        class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
                         <i class="bi bi-instagram"></i>
                     </router-link>
 
-                    <router-link to="/linkedin" class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
+                    <router-link to="https://www.threads.net/@enrique_vargas78"
+                        class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
                         <i class="bi bi-li bi-threads"></i>
                     </router-link>
 
-                    <router-link to="/youtube" class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
+                    <router-link to="https://youtube.com/@enriqueg_v078?si=m_gI9SrgtDmNYPx8"
+                        class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
                         <i class="bi bi-youtube"></i>
                     </router-link>
                 </section>
@@ -86,7 +92,8 @@
 
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
                 © 2025 Copyright:
-                <router-link to="/" class="text-white"> <span class="Enrique">Enrique</span> <span class="Vargas">Vargas</span></router-link>
+                <router-link to="/" class="text-white"> <span class="Enrique">Enrique</span> <span
+                        class="Vargas">Vargas</span></router-link>
             </div>
         </footer>
     </div>

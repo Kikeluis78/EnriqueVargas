@@ -13,7 +13,7 @@
           <div class="modal-content rounded-4 shadow">
             <div class="modal-header">
               <h5 class="modal-title" id="modalMensajeLabel">
-                📢 Proyecto Personal
+                📢   ! Ponte Pilas ¡ 
               </h5>
               <button
                 type="button"
@@ -23,12 +23,12 @@
               ></button>
             </div>
             <div class="modal-body fs-5">
-              Voy a <strong>Regar 20 Aplicaciones Web</strong> para crear mi
-              portafolio y para agarrar práctica.
+              Voy a <strong>Regar 10 Aplicaciones Web</strong> para crecer mi
+              portafolio de Cleintes. Se parte de este "Proyecto" y mandame  tus <strong>DATOS.</strong>
             </div>
             <div class="modal-footer">
               <router-link to="/formulario" class="btn btn-success">
-                Ir al formulario
+                Registro
               </router-link>
             </div>
           </div>

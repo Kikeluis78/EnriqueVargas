@@ -12,7 +12,7 @@ export default defineConfig({
       manifest: {
         name: 'Mi App PWA',
         short_name: 'MiApp',
-        description: 'Mi proyecto con Vue + Vite como PWA',
+        description: 'Mi Pagina echa con Vue + Vite como PWA',
         theme_color: '#42b983',
         start_url: '/',
         display: 'standalone',

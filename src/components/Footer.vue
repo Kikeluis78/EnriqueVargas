@@ -61,33 +61,34 @@
                 </section>
 
                 <hr class="mb-4" />
+                <section class="mb-1 text-center">
 
-                <section class="mb-1 text-center ">
-                    <router-link to="https://www.facebook.com/share/168GbGt5Ri/"
+                    <a href="https://www.facebook.com/share/168GbGt5Ri/" target="_blank"
                         class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
                         <i class="bi bi-facebook"></i>
-                    </router-link>
+                    </a>
 
-                    <router-link to="https://vm.tiktok.com/ZMB9UdUPj/"
+                    <a href="https://vm.tiktok.com/ZMB9UdUPj/" target="_blank"
                         class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
                         <i class="bi bi-tiktok"></i>
-                    </router-link>
+                    </a>
 
-                    <router-link to="https://www.instagram.com/enrique_vargas78/profilecard/?igsh=MWRkZXp2c3A1cHN0OQ=="
-                        class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
+                    <a href="https://www.instagram.com/enrique_vargas78/profilecard/?igsh=MWRkZXp2c3A1cHN0OQ=="
+                        target="_blank" class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
                         <i class="bi bi-instagram"></i>
-                    </router-link>
+                    </a>
 
-                    <router-link to="https://www.threads.net/@enrique_vargas78"
+                    <a href="https://www.threads.net/@enrique_vargas78" target="_blank"
                         class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
-                        <i class="bi bi-li bi-threads"></i>
-                    </router-link>
+                        <i class="bi bi-threads"></i>
+                    </a>
 
-                    <router-link to="https://youtube.com/@enriqueg_v078?si=m_gI9SrgtDmNYPx8"
+                    <a href="https://youtube.com/@enriqueg_v078?si=m_gI9SrgtDmNYPx8" target="_blank"
                         class="btn btn-outline-light btn-floating m-1 mx-2" role="button">
                         <i class="bi bi-youtube"></i>
-                    </router-link>
+                    </a>
                 </section>
+
             </div>
 
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">

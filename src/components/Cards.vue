@@ -58,7 +58,8 @@ const handleClick = () => {
         <div class="tarjeta">
           <i class="bi bi-shield-check icono"></i>
           <p class="texto-card">Confianza y transparencia. Garantia Asegurada</p>
-          <router-link to="/politicas" class="btn btn-primary">Ver Más</router-link>
+          <router-link :to="{ path: '/confianza', hash: '#Confiaza' }" class="btn btn-outline-primary">Entrega</router-link>
+
 
         </div>
       </div>
@@ -80,17 +81,14 @@ const handleClick = () => {
         <div class="tarjeta">
           <i class="bi bi-tools icono"></i>
     <p class="texto-card">Soporte y mantenimiento continuo</p>
-    <router-link to="/soporte" class="btn btn-primary">Ver Más</router-link>
-
+    <router-link :to="{ path: '/confianza', hash: '#Soporte' }" class="btn btn-outline-primary">Soporte</router-link>
         </div>
       </div>
-
-
       <div class="col-md-6 mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <div class="tarjeta">
           <i class="bi bi-clock-history icono"></i>
           <p class="texto-card">Entregamos en 72 hrs.</p>
-          <router-link to="/politicas" class="btn btn-primary">Ver Más</router-link>
+          <router-link :to="{ path: '/confianza', hash: '#Entrega' }" class="btn btn-outline-primary">Entrega</router-link>
 
         </div>
       </div>

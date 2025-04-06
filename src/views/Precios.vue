@@ -24,6 +24,14 @@ const paquetes = ref([
     titulo: 'Landing Page Básica',
     categoria: 'Diseño Web',
     descripcion: 'Página de una sola sección ideal para promociones o productos individuales.',
+    precio: '$Free',
+    imagen: 'https://via.placeholder.com/300x200',
+    link: '#'
+  },
+  {
+    titulo: 'Landing Page Básica',
+    categoria: 'Diseño Web',
+    descripcion: 'Página de una sola sección ideal para promociones o productos individuales.',
     precio: '$30 USD',
     imagen: 'https://via.placeholder.com/300x200',
     link: '#'
@@ -40,7 +48,7 @@ const paquetes = ref([
     titulo: 'Portafolio Profesional',
     categoria: 'Diseño Web',
     descripcion: 'Ideal para freelancers, incluye galería, CV, y formulario de contacto.',
-    precio: '$100 USD',
+    precio: '$50 USD',
     imagen: 'https://via.placeholder.com/300x200',
     link: '#'
   },
@@ -71,9 +79,10 @@ const paquetes = ref([
     <!-- Intro -->
     <section class="intro text-center py-5">
       <div class="container">
-        <h1 class="mb-3">Descubre lo que ofrecemos</h1>
+        <h1 class="mb-3">" Esto es lo que te ofresco "</h1>
         <p class="lead">
-          Servicios diseñados para cubrir tus necesidades. Elige el que mejor se adapte a ti.
+         Un servicio diseñado para cubrir tus necesidades. Elige el que mejor se adapte a ti. y si no encuentras lo que tienes en mente
+         mandame  un detalle de tu pyoyecto, y lo generamos  juntos.
         </p>
       </div>
     </section>
@@ -81,7 +90,7 @@ const paquetes = ref([
     <!-- Tarjetas de servicios -->
     <section class="servicios py-5 bg-white">
       <div class="container">
-        <h2 class="text-center mb-2">Nuestros Paquetes Web</h2>
+        <h2 class="text-center mb-2">Paquetes Web</h2>
         <div class="row justify-content-center g-4">
           <div class="col-12 col-sm-6 col-lg-4 col-xl-2" 
                v-for="(paquete, index) in paquetes" 
@@ -110,7 +119,9 @@ const paquetes = ref([
         <p class="mb-4">
           Contacta con nosotros hoy mismo y da el siguiente paso.
         </p>
-        <a href="#" class="btn btn-success">Contáctanos</a>
+        <a href="https://wa.me/525611001627" target="_blank" class="btn btn-success">
+  Contáctanos por WhatsApp
+</a>
       </div>
     </section>
   </div>

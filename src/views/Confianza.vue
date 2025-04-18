@@ -27,18 +27,18 @@ onMounted(() => {
 
     <div class="contenedor-principal py-5 px-3 mx-auto mt-3">
         <!-- Título animado con GSAP -->
-        <h1 class="text-center text-primary mt-5 mb-4 titulo-principal">¿Por qué confiar en nosotros?</h1>
+        <h1 class="text-center text-primary mt-5 mb-4 titulo-principal">¿Por qué confiar en mì?</h1>
 
         <div class="row mt-5">
             <div class="col-12 tarjeta">
 
                 <!-- Sección Confianza -->
-                <section id="Confianza" class="mb-5" data-aos="fade-up">
-                    <h2 class="text-primary">Nuestra Confianza</h2>
+                <section id="Confianza" class="mb-5  mt-5" data-aos="fade-up">
+                    <h2 class="text-primary"> Confianza</h2>
                     <p>
                         <img src="/src/assets/banner1.jpg " alt="" class="imagenes">
-                        La confianza es el pilar fundamental de nuestra marca. Nos dedicamos a construir relaciones
-                        duraderas y auténticas con nuestros clientes, ofreciendo un servicio transparente, honesto y siempre orientado a tus necesidades.
+                        La confianza es el pilar fundamental de para mi marca. Me edentifico en construir relaciones
+                        duraderas y auténticas con mis clientes, por eso ofrezco un servicio transparente, honesto y siempre orientado a tus necesidades.
                         Cada decisión y acción que tomamos está pensada para brindarte seguridad y tranquilidad.
                     </p>
                 </section>
@@ -51,19 +51,17 @@ onMounted(() => {
             <h2 class="text-primary">Soporte Personalizado</h2>
             <p>
                 <img src="/src/assets/css3.png" alt=""  class="imagenes">
-                Nuestro equipo de soporte está siempre listo para ayudarte. Desde la primera consulta hasta la posventa, te
-                acompañamos en todo momento. Brindamos atención personalizada, rápida y profesional para resolver
-                cualquier duda o inconveniente.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique tenetur, repellat cum rem, temporibus veritatis earum eaque vitae atque non animi delectus ex officia, accusantium ipsam laborum a! Laboriosam!
             </p>
         </section>
 
         <!-- Sección Entrega -->
-        <section id="Entrega" class="mb-5" data-aos="fade-left">
+        <section id="Entrega" class="mb-5 mt-5" data-aos="fade-left">
             <h2 class="text-primary">Entregas Rápidas y Seguras</h2>
             <p>
                 <img src="/src/assets/javascript.png" alt="" class="imagenes">
-                Trabajamos con sistemas logísticos eficientes y seguros que garantizan la llegada puntual y en óptimas condiciones de
-                tus productos. Cada envío está monitoreado para que tengas control total y puedas disfrutar sin preocupaciones.
+                Trabajo  con sistema logístico eficiente ademas, seguro que te garantiza la llegada en tiempo y en óptimas condiciones de
+                tu producto. Cada envío está monitoreado para que tengas control total y puedas disfrutar sin preocupaciones.Lo mas importante para mi es tu tranquilidad.
             </p>
         </section>
     </div>

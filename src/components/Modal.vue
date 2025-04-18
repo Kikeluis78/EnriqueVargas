@@ -23,8 +23,8 @@
               ></button>
             </div>
             <div class="modal-body fs-5">
-              Voy a <strong>Regar 10 Aplicaciones Web</strong> para crecer mi
-              portafolio de Cleintes. Se parte de este "Proyecto" y mandame  tus <strong>DATOS.</strong>
+              Voy a <strong>Regar 10 Aplicaciones Web;</strong> para crecer mi
+              portafolio de Clientes. Se parte de este "Proyecto" de crecimiento y mandame  tus <strong>DATOS.</strong>
             </div>
             <div class="modal-footer">
               <router-link to="/formulario" class="btn btn-success">

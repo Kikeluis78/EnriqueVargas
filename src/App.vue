@@ -11,6 +11,7 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 
 
+
 // Estado de carga
 const isLoaded = ref(false);
 
@@ -37,7 +38,6 @@ onMounted(() => {
       <Header />
       <router-view />
     </div>
-    
     <Footer />
   </div>
 </template>

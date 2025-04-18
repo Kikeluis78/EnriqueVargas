@@ -6,6 +6,8 @@ import 'aos/dist/aos.css'
 
 import Header from '../components/Header.vue';
 import Modal from '../components/Modal.vue';
+import ButtonWhatsApp from '../components/ButtonWhatsApp.vue';
+
 
 onMounted(() => {
   AOS.init({ duration: 1000, once: true })
@@ -75,14 +77,17 @@ const paquetes = ref([
   <div class="contenedor principal">
     <Header />
     <Modal />
-    
+    <ButtonWhatsApp/>
+ 
+
     <!-- Intro -->
     <section class="intro text-center py-5">
       <div class="container">
         <h1 class="mb-3">" Esto es lo que te ofresco "</h1>
         <p class="lead">
-         Un servicio diseñado para cubrir tus necesidades. Elige el que mejor se adapte a ti. y si no encuentras lo que tienes en mente
-         mandame  un detalle de tu pyoyecto, y lo generamos  juntos.
+          Un servicio diseñado para cubrir tus necesidades. Elige el que mejor se adapte a ti. y si no encuentras lo que
+          tienes en mente
+          mandame un detalle de tu pyoyecto, y lo generamos juntos.
         </p>
       </div>
     </section>
@@ -92,10 +97,8 @@ const paquetes = ref([
       <div class="container">
         <h2 class="text-center mb-2">Paquetes Web</h2>
         <div class="row justify-content-center g-4">
-          <div class="col-12 col-sm-6 col-lg-4 col-xl-2" 
-               v-for="(paquete, index) in paquetes" 
-               :key="index" 
-               data-aos="fade-up">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-2" v-for="(paquete, index) in paquetes" :key="index"
+            data-aos="fade-up">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
                 <h6 class="text-muted small">
@@ -119,12 +122,11 @@ const paquetes = ref([
         <p class="mb-4">
           Contacta con nosotros hoy mismo y da el siguiente paso.
         </p>
-        <a href="https://wa.me/525611001627" target="_blank" class="btn btn-success">
-  Contáctanos por WhatsApp
-</a>
+
       </div>
     </section>
   </div>
+
 </template>
 
 <style scoped>
@@ -142,14 +144,15 @@ const paquetes = ref([
   transform: translateY(-5px);
 }
 
-.precio{
-  color:green;
+.precio {
+  color: green;
   font-size: 25px;
 }
 
-.iconos{
+.iconos {
   font-size: 28px;
 }
+
 .intro,
 .outro {
   padding-top: 3rem;

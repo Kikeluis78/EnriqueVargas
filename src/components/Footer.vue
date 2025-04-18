@@ -1,4 +1,5 @@
 <template>
+
     <div class="app-container" data-aos="fade-up" data-aos-duration="1000">
         <!-- Contenido de la página -->
         <div class="content">
@@ -12,39 +13,26 @@
                 <section class="">
                     <div class="row  ">
                         <div class="col-6 col-lg-4 mt-3  ">
-                            <h5 class="text-uppercase">Links</h5>
+
                             <ul class="list-unstyled mb-0">
                                 <!-- Usando router-link en lugar de <a> -->
-                                <li><router-link to="/link1" class="text-white">Terminos y Condiciones</router-link>
+                                <li><router-link to="/terminos" class="text-white">Terminos y Condiciones</router-link>
                                 </li>
-                                <li><router-link to="/link2" class="text-white">Politica de Calidad</router-link></li>
-                                <li><router-link to="/link3" class="text-white">Cursos</router-link></li>
-                                <li><router-link to="/link4" class="text-white">Blog</router-link></li>
+                                <li><router-link to="/politica" class="text-white">Politica de Privacidad</router-link></li>
+
                             </ul>
                         </div>
                         <!-- Otros enlaces -->
                         <div class="col-6 col-lg-4 mt-3">
-                            <h5 class="text-uppercase">Links</h5>
+
                             <ul class="list-unstyled mb-0">
                                 <!-- Usando router-link en lugar de <a> -->
-                                <li><router-link to="/link1" class="text-white">Edicion de Video</router-link></li>
-                                <li><router-link to="/link2" class="text-white">creacion de Audio</router-link></li>
-                                <li><router-link to="/link3" class="text-white">Noticias</router-link></li>
-                                <li><router-link to="/link4" class="text-white">Cripto Monedas</router-link></li>
+                                <li><router-link to="" class="text-white">Edicion de Video</router-link></li>
+                                <li><router-link to="" class="text-white">creacion de Audio</router-link></li>
+
                             </ul>
                         </div>
 
-                        <!-- Otros enlaces -->
-                        <div class="col-6 col-lg-4 mt-3">
-                            <h5 class="text-uppercase">Links</h5>
-                            <ul class="list-unstyled mb-0">
-                                <!-- Usando router-link en lugar de <a> -->
-                                <li><router-link to="/link1" class="text-white">Edicion de Video</router-link></li>
-                                <li><router-link to="/link2" class="text-white">creacion de Audio</router-link></li>
-                                <li><router-link to="/link3" class="text-white">Noticias</router-link></li>
-                                <li><router-link to="/link4" class="text-white">Cripto Monedas</router-link></li>
-                            </ul>
-                        </div>
                     </div>
 
                 </section>
@@ -98,4 +86,19 @@
             </div>
         </footer>
     </div>
-</template>
+</template> 
+
+<style scoped>
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: underline; /* Opcional: si quieres que se subraye al pasar el mouse */
+}
+
+li {
+  margin: 10px 0;
+}
+
+</style>

@@ -67,7 +67,7 @@ onUnmounted(() => {
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><router-link class="nav-link" to="/" @click="closeMenu">Home</router-link></li>
               <li class="nav-item"><router-link class="nav-link" to="/precios" @click="closeMenu">Precios</router-link></li>
-              <li class="nav-item"><router-link class="nav-link" to="/plantillas" @click="closeMenu">Plantillas</router-link></li>
+             
               <li class="nav-item"><router-link class="nav-link" to="/demo" @click="closeMenu">Demo</router-link></li>
               <li class="nav-item me-3"><router-link class="nav-link" to="/about" @click="closeMenu">About</router-link></li>
             </ul>

@@ -37,7 +37,7 @@ const handleClick = () => {
           <i class="bi bi-pc-display-horizontal icono"></i>
  
           <p class="texto-card">Paginas Web Echas a Medida , 100% responsivas</p>
-          <router-link to="/plantillas" class="btn btn-primary">Ver Más</router-link>
+          <router-link to="/paginas" class="btn btn-primary">Ver Más</router-link>
 
         </div>
       </div>
@@ -58,7 +58,7 @@ const handleClick = () => {
         <div class="tarjeta">
           <i class="bi bi-shield-check icono"></i>
           <p class="texto-card">Confianza y transparencia. Garantia Asegurada</p>
-          <router-link :to="{ path: '/confianza', hash: '#Confiaza' }" class="btn btn-primary">ver mas</router-link>
+          <router-link :to="{ path: '/confianza', hash: '#Transparencia' }" class="btn btn-primary">ver mas</router-link>
 
 
         </div>
@@ -69,7 +69,7 @@ const handleClick = () => {
         <div class="tarjeta">
           <i class=" bi bi-android2 icono"></i>
     <p class="texto-card">Aplicaciones Android</p>
-    <router-link to="/Android" class="btn btn-primary">Ver Más</router-link>
+    <router-link to="/android" class="btn btn-primary">Ver Más</router-link>
 
         </div>
       </div>

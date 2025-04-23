@@ -22,17 +22,18 @@
 
                             </ul>
                         </div>
-                        <!-- Otros enlaces -->
+
+                        <!-- Otros enlaces 
                         <div class="col-6 col-lg-4 mt-3">
 
                             <ul class="list-unstyled mb-0">
-                                <!-- Usando router-link en lugar de <a> -->
+                        
                                 <li><router-link to="" class="text-white">Edicion de Video</router-link></li>
                                 <li><router-link to="" class="text-white">creacion de Audio</router-link></li>
 
                             </ul>
                         </div>
-
+                         -->
                     </div>
 
                 </section>
@@ -41,9 +42,9 @@
 
                 <section>
                     <p class="d-flex justify-content-center align-items-center">
-                        <span class="me-3">Registrate Gratis</span>
+                        <span class="me-3">Plan WebApp "GRATIS" </span>
                         <button type="button" class="btn btn-outline-light btn-rounded">
-                            Crear Cuenta
+                            Registro
                         </button>
                     </p>
                 </section>

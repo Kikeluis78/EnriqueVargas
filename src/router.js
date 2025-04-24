@@ -2,24 +2,24 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from './views/Home.vue';
 import Precios from './views/Precios.vue';
 import Terminos from './views/Terminos.vue';
-import Demo from './views/Demo.vue';
+import Demos from './views/Demos.vue';
 import Confianza from './views/Confianza.vue';
 import Politica from  './views/Politica.vue';
 import Paginas from './views/Paginas.vue';
 import Android from './views/Android.vue';
-import About from './views/About.vue';
+import Contacto from './views/Contacto.vue';
 import Free from './views/Free.vue';
 
 const routes = [
   { path: '/', component: Home },
   { path: '/precios', component: Precios },
-  { path: '/demo', component: Demo },
+  { path: '/demos', component: Demos },
   { path: '/confianza', component: Confianza },
   { path: '/terminos', component: Terminos },
   { path: '/politica', component: Politica },
   { path: '/paginas', component: Paginas },
   { path: '/android', component: Android },
-  { path: '/about',   component: About},
+  { path: '/contacto',   component: Contacto},
   { path: '/free',  component: Free}
 ];
 

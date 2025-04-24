@@ -47,7 +47,16 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
+
+// contador carrito 
+const contadorCarrito = ref(0); // Esto lo actualizaremos más adelante
+
+// Más adelante puedes hacer: contadorCarrito.value = productos.length;
+
+
+
 </script>
+<!-- DENTRO DEL <template> antes del botón hamburguesa -->
 
 <template>
   <div ref="header" class="header-container">
@@ -68,10 +77,21 @@ onUnmounted(() => {
           <div class="collapse navbar-collapse" :class="{ show: isMenuOpen }" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><router-link class="nav-link" to="/" @click="closeMenu">Home</router-link></li>
-              <li class="nav-item"><router-link class="nav-link" to="/precios" @click="closeMenu">Precios</router-link>
-              </li>
-              <li class="nav-item"><router-link class="nav-link" to="/demo" @click="closeMenu">Demos</router-link></li>
-              <li class="nav-item"><router-link class="nav-link" to="/about" @click="closeMenu">About</router-link></li>
+              <li class="nav-item"><router-link class="nav-link" to="/precios" @click="closeMenu">Precios</router-link></li>
+              <li class="nav-item"><router-link class="nav-link" to="/demos" @click="closeMenu">Demos</router-link></li>
+              <li class="nav-item"><router-link class="nav-link" to="/contacto" @click="closeMenu">Contacto</router-link></li>
+               <!-- Carrito de compras -->
+    <li class="nav-item position-relative ms-3" id="carrito-compras">
+      <router-link class="nav-link d-flex align-items-center" to="/carrito" @click="closeMenu">
+        <!-- Ícono SVG moderno -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 13H4a.5.5 0 0 1-.49-.402L1.01 2H.5a.5.5 0 0 1-.5-.5zm3.14 4l1.25 6h8.22l1.25-6H3.14z"/>
+          <path d="M5.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
+        <!-- Contador de productos -->
+        <span class="badge bg-danger rounded-pill ms-1" id="contador-carrito">0</span>
+      </router-link>
+    </li>
             </ul>
           </div>
         </div>
@@ -102,4 +122,19 @@ onUnmounted(() => {
 .collapse.show {
   display: block !important;
 }
+
+#carrito-compras svg {
+  transition: transform 0.2s ease;
+}
+#carrito-compras:hover svg {
+  transform: scale(1.2);
+}
+
+#contador-carrito {
+  font-size: 0.75rem;
+  position: relative;
+  top: -5px;
+}
+
+
 </style>

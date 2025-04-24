@@ -7,6 +7,8 @@ import Confianza from './views/Confianza.vue';
 import Politica from  './views/Politica.vue';
 import Paginas from './views/Paginas.vue';
 import Android from './views/Android.vue';
+import About from './views/About.vue';
+import Free from './views/Free.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -17,6 +19,8 @@ const routes = [
   { path: '/politica', component: Politica },
   { path: '/paginas', component: Paginas },
   { path: '/android', component: Android },
+  { path: '/about',   component: About},
+  { path: '/free',  component: Free}
 ];
 
 const router = createRouter({

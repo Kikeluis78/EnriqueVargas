@@ -17,12 +17,12 @@ const handleScroll = () => {
   } else {
     gsap.to(header.value, { y: 0, duration: 0.5, ease: "power2.out" });
   }
-
   if (scrollTop === 0) {
-    gsap.to(header.value, { backgroundColor: "green", duration: 0.3 });
-  } else {
-    gsap.to(header.value, { backgroundColor: "#007bff", duration: 0.3 });
-  }
+  gsap.to(header.value, { backgroundColor: "#e3f2fd", duration: 0.3 });
+} else {
+  gsap.to(header.value, { backgroundColor: "#6c757d", duration: 0.3 });
+}
+
 
   lastScrollTop.value = scrollTop <= 0 ? 0 : scrollTop;
 };
@@ -51,25 +51,27 @@ onUnmounted(() => {
 
 <template>
   <div ref="header" class="header-container">
-    <div class="container">
+    <div class="container-fluid px-4">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <router-link class="navbar-brand" to="/">
             <span class="Enrique">Enrique</span><span class="Vargas">Vargas</span>
           </router-link>
+
           <!-- Botón hamburguesa -->
           <button class="navbar-toggler" type="button" @click="toggleMenu" :aria-expanded="isMenuOpen.toString()">
             <span v-if="!isMenuOpen" class="navbar-toggler-icon"></span>
             <span v-else class="close-icon">✖</span>
           </button>
+
           <!-- Menú colapsable -->
           <div class="collapse navbar-collapse" :class="{ show: isMenuOpen }" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><router-link class="nav-link" to="/" @click="closeMenu">Home</router-link></li>
-              <li class="nav-item"><router-link class="nav-link" to="/precios" @click="closeMenu">Precios</router-link></li>
-             
-              <li class="nav-item"><router-link class="nav-link" to="/demo" @click="closeMenu">Demo</router-link></li>
-              <li class="nav-item me-3"><router-link class="nav-link" to="/about" @click="closeMenu">About</router-link></li>
+              <li class="nav-item"><router-link class="nav-link" to="/precios" @click="closeMenu">Precios</router-link>
+              </li>
+              <li class="nav-item"><router-link class="nav-link" to="/demo" @click="closeMenu">Demos</router-link></li>
+              <li class="nav-item"><router-link class="nav-link" to="/about" @click="closeMenu">About</router-link></li>
             </ul>
           </div>
         </div>
@@ -77,6 +79,7 @@ onUnmounted(() => {
     </div>
   </div>
 </template>
+
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Knewave&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');

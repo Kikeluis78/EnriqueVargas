@@ -138,19 +138,22 @@ onBeforeUnmount(() => {
   border-radius: 0.5rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
-/* Botón flotante */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
+  background-color: #03aa40;
   border-radius: 50%;
+  width: 55px;
+  height: 55px;
   padding: 15px;
   z-index: 1050;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Animación de pulso */

@@ -28,13 +28,13 @@ const paquetes = ref([
     descripcion: 'Página de una sola sección ideal para promociones o productos individuales.',
     precio: '$Free',
     imagen: 'https://via.placeholder.com/300x200',
-    link: '#'
+    link: '/free'
   },
   {
     titulo: 'Landing Page Básica',
     categoria: 'Diseño Web',
     descripcion: 'Página de una sola sección ideal para promociones o productos individuales.',
-    precio: '$30 USD',
+    precio: '-- MX',
     imagen: 'https://via.placeholder.com/300x200',
     link: '#'
   },
@@ -42,7 +42,7 @@ const paquetes = ref([
     titulo: 'Sitio Web Corporativo',
     categoria: 'Negocios',
     descripcion: 'Diseño profesional con varias secciones (inicio, nosotros, servicios, contacto).',
-    precio: '$100 USD',
+    precio: '-- MX',
     imagen: 'https://via.placeholder.com/300x200',
     link: '#'
   },
@@ -50,7 +50,7 @@ const paquetes = ref([
     titulo: 'Portafolio Profesional',
     categoria: 'Diseño Web',
     descripcion: 'Ideal para freelancers, incluye galería, CV, y formulario de contacto.',
-    precio: '$50 USD',
+    precio: '-- MX',
     imagen: 'https://via.placeholder.com/300x200',
     link: '#'
   },
@@ -58,7 +58,7 @@ const paquetes = ref([
     titulo: 'Tienda Online',
     categoria: 'E-commerce',
     descripcion: 'Carrito de compras, pasarela de pago, productos ilimitados.',
-    precio: '$250 USD',
+    precio: '-- MX',
     imagen: 'https://via.placeholder.com/300x200',
     link: '#'
   },
@@ -66,17 +66,18 @@ const paquetes = ref([
     titulo: 'Blog Personal',
     categoria: 'Contenido',
     descripcion: 'Diseño limpio con sistema de entradas, categorías y comentarios.',
-    precio: '$80 USD',
+    precio: '-- MX',
     imagen: 'https://via.placeholder.com/300x200',
     link: '#'
   }
 ])
+
 </script>
 
 <template>
   <div class="contenedor principal">
-    <Header />
-    <Modal />
+    <Header/>
+    <Modal/>
     <ButtonWhatsApp/>
  
 
@@ -107,7 +108,8 @@ const paquetes = ref([
                 <h5 class="card-title">{{ paquete.titulo }}</h5>
                 <p class="card-text">{{ paquete.descripcion }}</p>
                 <p class="fw-bold  precio">{{ paquete.precio }}</p>
-                <a :href="paquete.link" class="btn btn-primary w-100">Ver más</a>
+                <router-link :to="paquete.link" class="btn btn-primary w-100">Ver más</router-link>
+
               </div>
             </div>
           </div>

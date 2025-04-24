@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import { VitePWA } from 'vite-plugin-pwa'; // 👈 Importamos el plugin
+import { VitePWA } from 'vite-plugin-pwa';
 import path from 'path';
 
 export default defineConfig({
@@ -8,11 +8,16 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+      includeAssets: [
+        'favicon.svg',
+        'favicon.ico',
+        'robots.txt',
+        'apple-touch-icon.png'
+      ],
       manifest: {
-        name: 'Mi App PWA',
-        short_name: 'MiApp',
-        description: 'Mi Pagina echa con Vue + Vite como PWA',
+        name: 'Enrique Vargas | Diseño Web y Android',
+        short_name: 'EnriqueDev',
+        description: 'Portafolio y proyectos de desarrollo web y apps móviles de Enrique Vargas.',
         theme_color: '#42b983',
         start_url: '/',
         display: 'standalone',

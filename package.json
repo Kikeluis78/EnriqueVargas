@@ -1,5 +1,5 @@
 {
-  "name": "practica",
+  "name": "enriquevargas",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -24,17 +24,17 @@
     "vite": "^6.2.0",
     "vite-plugin-pwa": "^1.0.0"
   },
-  "description": "This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.",
+  "description": "Sitio web de Enrique Vargas enfocado en diseño web y desarrollo Android.",
   "main": "vite.config.js",
+  "keywords": ["diseño web","diseño de pagianas", "desarrolador web", "desarrollo android","paginas html,css,js", "vue", "vite"],
+  "author": "Enrique Vargas",
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kikeluis78/Enriquev.git"
+    "url": "git+https://github.com/Kikeluis78/EnriqueVargas.git" 
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kikeluis78/Enriquev/issues"
+    "url": "https://github.com/Kikeluis78/EnriqueVargas.git-REPO/issues" 
   },
-  "homepage": "https://github.com/kikeluis78/Enriquev#readme"
+  "homepage": "https://github.com/Kikeluis78/EnriqueVargas.git-REPO#readme"
 }

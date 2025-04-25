@@ -16,7 +16,7 @@
             </li>
             <li class="list-group-item">
                 <i class="bi bi-megaphone-fill text-info me-2"></i>
-                Publicidad integrada para cubrir el dominio y hosting. ¡Tú no pagas nada!
+               Incluye publicidad para cubrir el dominio y hosting. ¡Tú no pagas nada!
             </li>
             <li class="list-group-item">
                 <i class="bi bi-whatsapp text-success me-2"></i>
@@ -24,9 +24,9 @@
             </li>
             <li class="list-group-item">
 
-                <router-link to="/BasicaPro" class="btn btn-primary" role="button">
-                    Ver Demo
-                </router-link>
+                <a href="/BasicaPro/index.html" class="btn btn-primary" role="button" target="_blank">
+  Ver Demo
+</a>
 
 
             </li>

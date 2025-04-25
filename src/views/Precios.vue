@@ -36,7 +36,7 @@ const paquetes = ref([
     descripcion: 'Página de una sola sección ideal para promociones o productos individuales.',
     precio: '-- MX',
     imagen: 'https://via.placeholder.com/300x200',
-    link: '#'
+    link: '/Basica'
   },
   {
     titulo: 'Sitio Web Corporativo',

@@ -9,18 +9,20 @@ import Paginas from './views/Paginas.vue';
 import Android from './views/Android.vue';
 import Contacto from './views/Contacto.vue';
 import Free from './views/Free.vue';
+import Basica from './views/Basica.vue';
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/precios', component: Precios },
-  { path: '/demos', component: Demos },
-  { path: '/confianza', component: Confianza },
-  { path: '/terminos', component: Terminos },
-  { path: '/politica', component: Politica },
-  { path: '/paginas', component: Paginas },
-  { path: '/android', component: Android },
+  { path: '/',  component: Home },
+  { path: '/precios',  component: Precios },
+  { path: '/demos',  component: Demos },
+  { path: '/confianza',  component: Confianza },
+  { path: '/terminos',  component: Terminos },
+  { path: '/politica',  component: Politica },
+  { path: '/paginas',  component: Paginas },
+  { path: '/android',  component: Android },
   { path: '/contacto',   component: Contacto},
-  { path: '/free',  component: Free}
+  { path: '/free',    component: Free},
+  { path: '/basica',  component: Basica},
 ];
 
 const router = createRouter({

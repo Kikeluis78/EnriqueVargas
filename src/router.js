@@ -10,6 +10,7 @@ import Android from './views/Android.vue';
 import Contacto from './views/Contacto.vue';
 import Free from './views/Free.vue';
 import Basica from './views/Basica.vue';
+import Form from './views/Form.vue';
 
 const routes = [
   { path: '/',  component: Home },
@@ -23,6 +24,7 @@ const routes = [
   { path: '/contacto',   component: Contacto},
   { path: '/free',    component: Free},
   { path: '/basica',  component: Basica},
+  { path: '/form',   component: Form},
 ];
 
 const router = createRouter({

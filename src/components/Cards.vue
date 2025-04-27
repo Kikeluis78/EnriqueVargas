@@ -9,7 +9,7 @@ onMounted(() => {
     AOS.init({
 
     });
-  },0);
+  }, 0);
 });
 
 
@@ -21,93 +21,106 @@ const handleClick = () => {
 
 
 <template>
-  
-  <div class="container text-center">
-    <h1 class="titulo-cards">
-      Bienvenid@s <span class="hand">👋</span>
-    </h1>
-  </div>
-  <!--container cards-->
-  <div class="container mt-2">
-    <!--fila 1-->
-    <div class="row mt-5 justify-content-center">
-      <!--cards-->
-      <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-        <div class="tarjeta">
-          <i class="bi bi-pc-display-horizontal icono"></i>
- 
-          <p class="texto-card">Paginas Web Echas a Medida , 100% responsivas</p>
-          <router-link to="/paginas" class="btn btn-primary">Ver Más</router-link>
+  <main>
 
+    <div class="container text-center">
+      <h1 class="titulo-cards ">
+        Bienvenid@s <span class="hand">👋</span>
+      </h1>
+    </div>
+    <!--container cards-->
+    <div class="container">
+      <!--fila 1-->
+      <div class="row mt-5 justify-content-center">
+        <!--cards-->
+        <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="tarjeta">
+            <i class="bi bi-pc-display-horizontal icono"></i>
+
+            <p class="texto-card">Paginas Web Echas a Medida , 100% responsivas</p>
+            <router-link to="/paginas" class="btn btn-primary">Ver Más</router-link>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-offset="250" data-aos-easing="ease-in-sine">
+          <div class="tarjeta">
+            <i class="bi bi-coin icono"></i>
+            <p class="texto-card">Precios Accesibles y Plan de Financiamiento</p>
+            <router-link to="/precios" class="btn btn-primary">Ver Más</router-link>
+
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-offset="250" data-aos-easing="ease-in-sine">
-        <div class="tarjeta">
-          <i class="bi bi-coin icono"></i>
-          <p class="texto-card">Precios Accesibles y Plan de Financiamiento</p>
-          <router-link to="/precios" class="btn btn-primary">Ver Más</router-link>
+      <!--fila 2-->
+      <div class="row">
+        <div class="col-md-6 mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="tarjeta">
+            <i class="bi bi-shield-check icono"></i>
+            <p class="texto-card">Confianza y transparencia. Garantia Asegurada</p>
+            <router-link :to="{ path: '/confianza', hash: '#Transparencia' }" class="btn btn-primary">ver
+              mas</router-link>
 
+
+          </div>
+        </div>
+
+
+        <div class="col-md-6 mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="tarjeta">
+            <i class=" bi bi-android2 icono"></i>
+            <p class="texto-card">Aplicaciones Android</p>
+            <router-link to="/android" class="btn btn-primary">Ver Más</router-link>
+
+          </div>
+        </div>
+      </div>
+
+      <!--fila 3-->
+      <div class="row">
+        <div class="col-md-6 mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="tarjeta">
+            <i class="bi bi-tools icono"></i>
+            <p class="texto-card">Soporte y mantenimiento continuo</p>
+            <router-link :to="{ path: '/confianza', hash: '#Soporte' }" class="btn btn-primary">Soporte</router-link>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="tarjeta">
+            <i class="bi bi-clock-history icono"></i>
+            <p class="texto-card">Entregamos en 72 hrs.</p>
+            <router-link :to="{ path: '/confianza', hash: '#Entrega' }" class="btn btn-primary">Ver mas</router-link>
+
+          </div>
         </div>
       </div>
     </div>
 
-    <!--fila 2-->
-    <div class="row">
-      <div class="col-md-6 mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-        <div class="tarjeta">
-          <i class="bi bi-shield-check icono"></i>
-          <p class="texto-card">Confianza y transparencia. Garantia Asegurada</p>
-          <router-link :to="{ path: '/confianza', hash: '#Transparencia' }" class="btn btn-primary">ver mas</router-link>
+    <!--Footer-->
 
+  </main>
 
-        </div>
-      </div>
-     
-
-      <div class="col-md-6 mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-        <div class="tarjeta">
-          <i class=" bi bi-android2 icono"></i>
-    <p class="texto-card">Aplicaciones Android</p>
-    <router-link to="/android" class="btn btn-primary">Ver Más</router-link>
-
-        </div>
-      </div>
-    </div>
-
-    <!--fila 3-->
-    <div class="row">
-      <div class="col-md-6 mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-        <div class="tarjeta">
-          <i class="bi bi-tools icono"></i>
-    <p class="texto-card">Soporte y mantenimiento continuo</p>
-    <router-link :to="{ path: '/confianza', hash: '#Soporte' }" class="btn btn-primary">Soporte</router-link>
-        </div>
-      </div>
-      <div class="col-md-6 mb-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-        <div class="tarjeta">
-          <i class="bi bi-clock-history icono"></i>
-          <p class="texto-card">Entregamos en 72 hrs.</p>
-          <router-link :to="{ path: '/confianza', hash: '#Entrega' }" class="btn btn-primary">Ver mas</router-link>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!--Footer-->
 </template>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 
+main {
+  margin-top: 0;
+  background: linear-gradient(145deg, #e0f7fa, #ffffff); /* Degradado azul claro - blanco */
+  min-height: 100vh;
+}
+
+
 .titulo-cards {
   color: blue;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: bold;
   font-style: italic;
-  margin-top: -85px; /* Acerca las Cards al Banner */
+  margin-top: -85px;
+  /* Acerca las Cards al Banner */
 
 
 }
@@ -131,21 +144,32 @@ const handleClick = () => {
   }
 }
 
+
+
 .tarjeta {
   text-align: center;
-  padding: 20px;
-  border: 2px solid #007bff;
-  border-radius: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-  background: #fff;
+  padding: 10px;
+  border: 2px solid #0056b3; /* azul un poco más fuerte */
+  border-radius: 20px;
+  background: linear-gradient(145deg, #ffffff, #d4eaff); /* fondo degradado suave */
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.2), /* sombra cercana */
+    8px 8px 20px rgba(0, 123, 255, 0.3); /* sombra extendida */
+  font-size: 35px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .tarjeta:hover {
-  transform: translateY(-5px);
-  box-shadow: 16px 16px 50px rgba(1, 15, 219, 0.3);
-  background-color: rgb(80, 204, 8);
+  transform: translateY(-10px);
+  box-shadow: 
+    8px 8px 20px rgba(0, 0, 0, 0.3), 
+    12px 12px 30px rgba(0, 123, 255, 0.4);
+  border-color: #003580; /* cambia un poco el borde al pasar mouse */
+  background: linear-gradient(145deg, #e8f0fe, #c0dbff); /* se ilumina un poco más */
 }
+
+
 
 .icono {
   font-size: 3rem;
@@ -167,6 +191,6 @@ const handleClick = () => {
 }
 
 .btn-primary:hover {
-  background: #bdab0d;
+  background: #011b4b;
 }
 </style>

@@ -24,7 +24,7 @@
             </li>
             <li class="list-group-item">
 
-                <a href="/Basica/index.html" class="btn btn-primary" role="button" target="_blank">
+                <a href="Basica/index.html" class="btn btn-primary" role="button" target="_blank">
   Ver Demo
 </a>
 

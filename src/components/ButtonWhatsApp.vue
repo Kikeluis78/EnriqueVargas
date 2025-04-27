@@ -1,28 +1,19 @@
 <template>
   <div>
     <!-- Modal WhatsApp -->
-    <div
-      v-if="showModal"
-      id="whatsapp-modal"
-      class="whatsapp-modal d-block fade show"
-      ref="whatsappModal"
-    >
+    <div v-if="showModal" id="whatsapp-modal" class="whatsapp-modal d-block fade show" ref="whatsappModal">
       <div class="whatsapp-modal-dialog">
         <div class="whatsapp-modal-content text-center p-3 position-relative">
           <!-- Botón de cierre en la esquina superior derecha -->
-          <button
-            type="button"
-            class="btn-close position-absolute top-0 end-0 m-2"
-            aria-label="Cerrar"
-            @click="closeModal"
-          ></button>
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-2" aria-label="Cerrar"
+            @click="closeModal"></button>
 
           <div class="mb-3">
             <i class="bi bi-person-lines-fill fs-1 text-primary me-2"></i>
             <i class="bi bi-whatsapp fs-1 text-success"></i>
           </div>
           <h5 class="modal-title mb-1 ">¿Necesitas ayuda?</h5>
-          <p class="mb-2">En que puedo apoyarte</p>
+          <p class="mb-2">Lleva tu negocio al mundo "Digital."</p>
           <div class="d-flex justify-content-center">
             <button class="btn btn-success" @click="goToWhatsapp">
               Pide Informes
@@ -33,13 +24,7 @@
     </div>
 
     <!-- Botón flotante -->
-    <div
-      v-if="showButton"
-      id="whatsapp-float-btn"
-      class="whatsapp-float pulse"
-      @click="goToWhatsapp"
-      ref="floatBtn"
-    >
+    <div v-if="showButton" id="whatsapp-float-btn" class="whatsapp-float pulse" @click="goToWhatsapp" ref="floatBtn">
       <i class="bi bi-whatsapp fs-3 text-white"></i>
     </div>
   </div>
@@ -138,6 +123,7 @@ onBeforeUnmount(() => {
   border-radius: 0.5rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -166,10 +152,12 @@ onBeforeUnmount(() => {
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
   }
+
   70% {
     transform: scale(1.05);
     box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
   }
+
   100% {
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
@@ -181,17 +169,19 @@ onBeforeUnmount(() => {
     max-width: 90%;
     margin: 0 auto;
   }
-  .modal-title{
+
+  .modal-title {
     font-size: 22px;
   }
-p{
-  font-size: 15px;
-  color:blue;
-}
+
+  p {
+    font-size: 15px;
+    color: blue;
+  }
+
   .whatsapp-float {
     bottom: 10px;
     right: 10px;
   }
 }
-
 </style>

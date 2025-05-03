@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  main.politica {
+    max-width: 900px;
+    margin: 60px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.7;
+  }
+
+  .politica h1,
+  .politica h2 {
+    color: #1a1a1a;
+    margin-top: 30px;
+  }
+
+  .politica h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .politica h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .politica p {
+    margin: 12px 0;
+  }
+
+  .politica ul {
+    margin-left: 20px;
+    padding-left: 0;
+  }
+
+  .politica li {
+    margin-bottom: 8px;
+  }
+
+  .politica a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+
+  .politica a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    main.politica {
+      padding: 20px;
+      margin: 20px;
+    }
+  }
